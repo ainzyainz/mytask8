@@ -43,10 +43,6 @@ public class App {
         List<Person> people = personDao.findMoreThanAge(Const.AGE_VALUE);
 
         System.out.println(people);
-        for(Person temp : people){
-            System.out.println(temp);
-        }
-
-
+        people.forEach(System.out::println);
     }
 }
